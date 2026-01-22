@@ -1,7 +1,7 @@
-#Q1. Create a New Database and  Table for Employees
+-- Q1. Create a New Database and  Table for Employees
 create database company_db;
 
-#Q2. Insert Data into Employees Table
+-- Q2. Insert Data into Employees Table
 use company_db;
 create table employees
  ( employee_id int, first_name varchar(50), last_name varchar(50), 
@@ -21,14 +21,14 @@ create table employees
 
 
 
-#Q3. Display All Employee Records Sorted by Salary (Lowest to Highest)
+-- Q3. Display All Employee Records Sorted by Salary (Lowest to Highest)
 
 select * from employees
 order by salary asc;
 
 
 
-#Q4. Show Employees Sorted by Department (A–Z) and Salary (High → Low)
+-- Q4. Show Employees Sorted by Department (A–Z) and Salary (High → Low)
 
 select * from employees
 order by department asc, salary desc;
@@ -46,7 +46,7 @@ order by hire_date desc;
 
 
 
-#Q6. Create and Populate a Sales Table
+-- Q6. Create and Populate a Sales Table
 
 create table sales
 (sale_id int, customer_name varchar(50), amount int, sale_date date);
@@ -65,43 +65,43 @@ select * from sales;
 
 
 
-#Q7. Display All Sales Records Sorted by Amount (Highest → Lowest)
+-- Q7. Display All Sales Records Sorted by Amount (Highest → Lowest)
 
 select * from sales
 order by amount desc;
 
 
 
-#Q8. Show All Sales Made by Customer “Aditi”
+-- Q8. Show All Sales Made by Customer “Aditi”
 
 select * from sales
 where customer_name = 'Aditi'
 
 
 
-#Q9. What is the Difference Between a Primary Key and a Foreign Key?
+-- Q9. What is the Difference Between a Primary Key and a Foreign Key?
 
-Primary key
-A primary key is a unique column we set in a table to easily identify and locate data queries.
-There is no null value or duplicate value in primary key.
-for example- roll no. is a primary key as it is unique for every student and it is easy to
- find the other dtails of student as roll no. is always unique. Also the same roll no. cannot 
- be given to two or more students.
+-- Primary key
+-- A primary key is a unique column we set in a table to easily identify and locate data queries.
+-- There is no null value or duplicate value in primary key.
+-- for example- roll no. is a primary key as it is unique for every student and it is easy to
+ -- find the other dtails of student as roll no. is always unique. Also the same roll no. cannot 
+ -- be given to two or more students.
  
- Foreign keys
- A foreign key iS a column used to link two or more tables together.
- A table can have any number of foreign keys, can have null or duplicate values.
+ -- Foreign keys
+ -- A foreign key iS a column used to link two or more tables together.
+ -- A table can have any number of foreign keys, can have null or duplicate values.
  
- for example we have amazon data, in this data we may have more than 1 tables. All the tables
- are customer, order, product, coupons, orderstatus, but all the  tables are connected,
- one or more column is common in two or more tables. The content in that
- column can be assumed as foreign keys.
+ -- for example we have amazon data, in this data we may have more than 1 tables. All the tables
+ -- are customer, order, product, coupons, orderstatus, but all the  tables are connected,
+ -- one or more column is common in two or more tables. The content in that
+ -- column can be assumed as foreign keys.
  
- # Q10. What Are Constraints in SQL and Why Are They Used?
+ -- Q10. What Are Constraints in SQL and Why Are They Used?
  
- Constraints are used to specify rules for data in a table.
- This ensures the accuracy and reliability.
- Is can be specified.
+-- Constraints are used to specify rules for data in a table.
+-- This ensures the accuracy and reliability.
+ -- Is can be specified.
  
  
  
